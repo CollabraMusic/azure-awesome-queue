@@ -1,6 +1,6 @@
 {
   "name": "azure-awesome-queue",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Azure Service Bus Queue",
   "main": "dist/index.js",
   "scripts": {
