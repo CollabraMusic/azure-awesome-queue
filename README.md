@@ -1,10 +1,10 @@
 # Azure Awesome Queue
 
-Continuously listen for messages from Azure, and limit the number of messages that are being processed at a time. You can also send messages using this library; however, it's a thin facade over the Microsoft approach.
+Continuously listen for messages from Azure ServiceBus queues, and limit the number of messages that are being processed at a time. You can also send messages using this library; however, it's a thin facade over the Microsoft approach.
 
 ## Rationale
 
-At the time that this was written, Microsoft has two approaches for interacting with their Service Bus queues: a REST API and AMQP 1.0. I wanted a way to receive messages from the queue continually, process the messages for any length of time, and limit the number of concurrent messages being processed at any point in time.
+At the time that this was written, Microsoft has two approaches for interacting with their ServiceBus queues: a REST API and AMQP 1.0. I wanted a way to receive messages from the queue continually, process the messages for any length of time, and limit the number of concurrent messages being processed at any point in time.
  
 The requirement to be able to process a message for any length of time eliminated the possibility of using AMQP 1.0 interface. There is nothing in the spec that supports this use-case, and it's up to the 'vendor' to decide how this would be implemented. Microsoft has no documented method of renewing a lock for a message if you're using AMQP, so I gave up on this approach.
  
