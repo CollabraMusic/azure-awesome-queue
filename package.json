@@ -1,0 +1,35 @@
+{
+  "name": "azure-awesome-queue",
+  "version": "0.1.0",
+  "description": "Azure Service Bus Queue",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "babel src --presets babel-preset-es2015,stage-2 --out-dir dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CollabraMusic/azure-awesome-queue.git"
+  },
+  "keywords": [
+    "Azure",
+    "ServiceBus",
+    "Queue"
+  ],
+  "author": "Brandon Kobel",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CollabraMusic/azure-awesome-queue/issues"
+  },
+  "homepage": "https://github.com/CollabraMusic/azure-awesome-queue#readme",
+  "dependencies": {
+    "any-promise": "^1.3.0",
+    "azure": "^0.10.6",
+    "azure-sb": "^0.10.2",
+    "debug": "^2.2.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.10.1",
+    "babel-preset-es2015": "^6.9.0",
+    "babel-preset-stage-2": "^6.11.0"
+  }
+}
